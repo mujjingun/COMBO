@@ -141,4 +141,4 @@ if __name__ == '__main__':
 		dummy_input_ = next(model_.parameters()).new_ones(1, n_ch_in_, h_in_, w_in_)
 		flops_ = count_ops(model_, dummy_input_, print_readable=False)
 
-	print('eval_acc:%.4f flops:%d' % (eval_acc_, flops_))
+	print(f'eval_acc:{eval_acc_:.4f} flops:{flops_[0]}')
